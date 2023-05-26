@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@media screen and (max-width: 1100px) {
+  /* Ajoutez ici les styles spécifiques pour les écrans de petite taille */
+}
+
+:root {
+  --white-color: #fff;
+  --dark-color: #222;
+  --body-by-color: #ffff;
+  --section-bg-color: #202834;
+  --navigation-item-hover-color: #3b5378;
+  --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 5px 25px rgb(0 0 0 / 25%);
+  --scroll-bar-color: #fff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: var(--scroll-thumb-color);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover-color);
+}
+
+body {
+  background-image: url("wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ padding-top: 300px;
+}
+
+.container .paragraph {
+  max-width: 750px;
+  height: 60px;
+  font: 1.4em sans-serif;
+  text-shadow: var(--text-shadow);
+  padding: 500px 25px;
+  background: rgba(255, 255, 255, 0.202);
+  backdrop-filter: blur(40px);
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  transition-delay: 0.3s;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.container .paragraph.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.container #target-title1 {
+  flex: 1;
+  padding: -10px;
+  font-size: 40px;
+  margin-top: -600px;
+  margin-bottom: 40px;
+  text-shadow: var(--text-shadow);
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  transition-delay: 0.3s;
+}
+
+.container #target-title1.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.container .image {
+  flex: 1;
+  text-align: center;
+  transform: translateX(-80px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  transition-delay: 0.3s;
+  margin-bottom: 40px;
+}
+
+.container .image.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.container .image img {
+  border-radius: 50%;
+  width: 350px;
+  height: 550px;
+  margin-top: -999px;
+  border-color: #fff;
+  border-style: var(--body-by-color);
+}

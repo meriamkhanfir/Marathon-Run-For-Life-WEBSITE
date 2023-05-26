@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marathon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="marathon.css">
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        /* Transitions */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(-40px);
+            transition: transform 1s ease, opacity 1s ease;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="logo1.png" alt="logo" class="logo1"></div>
+        <div class="nav-links">
+          <ul>
+            <li ><a href="marathon.php">Home<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="pj1.html">Présentation</a></li>
+              <li><a href="page2.html">Objectifs</a></li>
+              <li><a href="formorganizateur.php">Organisateurs</a></li>
+              <li><a href="formdons.php">Dons</a></li>
+              <li><a href="page3.html">Marathon en TUNISIE</a></li>
+              </ul>
+            </div>
+            </li>
+            <li ><a href="#">Marathon Run For Life<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu2">
+              <ul>
+                <li><a href="pj1.html">Présentation</a></li>
+                <li><a href="page2.html">Objectifs</a></li>
+          
+                <li><a href="formorganizateur.html">Organisateurs</a></li>
+                <li><a href="formdons.html">Dons</a></li>
+                <li><a href="page3.html">Marathon en TUNISIE</a></li>
+              </ul>
+            </div>
+            </li>
+            </li>
+            <li ><a href="historique.html">Edition</a></li>
+            <li ><a href="#section-contactez-nous">Contactez-Nous</a></li>
+            <li ><a href="loginpage.php">Login</a></li>
+            
+          </ul>
+        </div>
+        <img src="./Hamburger_icon.svg.jpg" alt="menuhamburger" class="menu-hamburger"/>
+        
+      </nav>
+      <div class="obj">
+    <h1 class="fade-in active">Objectifs du Marathon</h1>
+    <div class="container1 fade-in">
+        <div class="block1">
+            <h2>Le Volet de la Paix:</h2>
+            <p>
+                - le croissant rouge, l’Amnesty internationale et ligue de droit de l’homme va organisent des ateliers de dessin pour les enfants sur la paix, et une présentation sur le Droit International Humanitaire, avec des affichages comporte des phrases et des photos des issues internationale de paix.
+            </p>
+        </div>
+        <div class="block2">
+            <h2>Le Volet Humanitaire :</h2>
+            <p>- la distribution de 5 chaises roulants pour des personnes handicapées a besoin de cette aide, pour les donner la chance de déplacer facilement.</p>
+        </div>
+        <div class="block3">
+            <h2>Le Volet de la Vie :</h2>
+            <p>- Dans cet événement ca sera des groupes folkloriques et de groupe d’animation pour les enfants va animée la ville, va donner une nouvelle notion de joie, et de aimer la vie</p>
+        </div>
+    </div>
+</div>
+    <table class="fade-in">
+        <tr>
+            <td class="double-width">
+                <p>Créer un club organise cet événement annuellement.</p>
+            </td>
+            <td></td>
+            <td class="double-width">
+                <img src="page2_image1.jpg" alt="Image 1" width="200px" height="150px">
+            </td>
+        </tr>
+        <tr>
+            <td class="double-width">
+                <p>Animation de la ville.</p>
+            </td>
+            <td></td>
+            <td class="double-width">
+                <img src="page2_image2.jpg" alt="Image 2" width="200px" height="150px">
+            </td>
+        </tr>
+        <tr>
+            <td class="double-width">
+                <p>Encourager les gens à pratiquer du sport.</p>
+            </td>
+            <td></td>
+            <td class="double-width">
+                <img src="page2_image3.jpg" alt="Image 3" width="200px" height="150px">
+            </td>
+        </tr>
+        <tr>
+            <td class="double-width">
+                <p>Encourager entre les différentes cultures.</p>
+            </td>
+            <td></td>
+            <td class="double-width">
+                <img src="page2_image4.jpg" alt="Image 4" width="200px" height="150px">
+            </td>
+        </tr>
+    </table>
+
+
+    <script>
+        // Add "active" class to elements for fade-in effect
+        document.addEventListener("DOMContentLoaded", function () {
+            var fadeElems = document.querySelectorAll(".fade-in");
+            fadeElems.forEach(function (elem) {
+                elem.classList.add("active");
+            });
+        });
+    </script>
+    <footer>
+        <section id="section-contactez-nous"></section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h2 class="under">About Us</h2>
+                <h3>We are a team of passionate runners who organize the annual Marathon Run for Life event. Our mission is to promote fitness and healthy lifestyle choices while raising funds for charity.</h3>
+              </div>
+              <div class="col-md-4">
+                <h2 class="under">Contact Us</h2>
+                <form>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                  <br>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <br>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <br>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+              <div class="col-md-4">
+                <h2 class="under">Contact Info</h2>
+                <div class="contact-container">
+                  <h3><i class="fas fa-envelope"></i> info@marathonrunforlife.com</h3>
+                  <h3><i class="fas fa-phone"></i> +1 (555) 123-4567</h3>
+                </div>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="footer-text">
+                  <h2>&copy; 2023 Marathon Run for Life. All rights reserved.</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+</body>
+
+</html>

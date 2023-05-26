@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@media screen and (max-width: 1100px) {
+}
+
+
+:root {
+  --white-color: #fff;
+  --dark-color: #222;
+  --body-by-color: #ffff;
+  --section-bg-color: #202834;
+  --navigation-item-hover-color: #3b5378;
+  --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 5px 25px rgb(0 0 0 / 25%);
+
+  --scroll-bar-color: #fff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: var(--scroll-thumb-color);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover-color);
+}
+
+body {
+  background-image: url("pexels-run-ffwpu-3632853.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  backdrop-filter: blur(10px);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  transition-delay: 0.3s;
+  transition-property: transform, opacity;
+  margin-bottom: 40px;
+}
+
+.block2 {
+  padding: 20px;
+  font-size: 20px;
+  align-items: center;
+  background-color: rgb(223, 218, 218);
+}
+
+.block1 {
+  padding: 20px;
+  font-size: 20px;
+  align-items: center;
+  background-color: rgb(223, 218, 218);
+  margin-left: 50px;
+}
+
+.block3 {
+  padding: 20px;
+  font-size: 20px;
+  align-items: center;
+  background-color: rgb(223, 218, 218);
+  margin-right: 50px;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  border-color: rgb(255, 255, 255);
+  border-collapse: collapse;
+  margin-top: 200px;
+  margin-left: -70px;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  transition-delay: 0.3s;
+  transition-property: transform, opacity;
+  margin-bottom: 40px;
+}
+
+td {
+  border: 0px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+td p {
+  font-size: 20px;
+  background-color: rgb(223, 218, 218);
+  width: 450px;
+  height: 70px;
+  padding: 30px;
+  margin-left: 150px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 50px;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  transition-delay: 0.3s;
+  transition-property: transform, opacity;
+  
+}
+.obj{
+  padding-top: 180px;
+}

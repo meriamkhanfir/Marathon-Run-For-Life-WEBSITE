@@ -1,0 +1,66 @@
+.partners-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  overflow: hidden;
+}
+
+.partners-logos { 
+  display: flex;
+  animation: slide-right 20s linear infinite; /* Diminuez la durée de l'animation si nécessaire */
+  
+  
+}
+
+.partners-logos img {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px; /* Augmenter l'espace entre les logos */
+  opacity: 1;
+  transform: translateX(-500px); /* Les logos commencent au centre */
+  animation: slideLogo 15s linear infinite; /* Diminuez la durée de l'animation si nécessaire */
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%); /* Translation initiale vers la gauche */
+  }
+  50% {
+    transform: translateX(0); /* Pause au milieu de l'animation */
+  }
+  100% {
+    transform: translateX(100%); /* Translation finale vers la droite */
+  }
+}
+
+@keyframes slideLogo {
+  0% {
+    transform: translateX(0); /* Les logos commencent au centre */
+  }
+  5% {
+    transform: translateX(-100%); /* Logo sortant à gauche */
+  }
+  25% {
+    transform: translateX(-150%); /* Translation vers la gauche */
+  }
+  75% {
+    transform: translateX(-50%); /* Translation vers la droite */
+  }
+  95% {
+    transform: translateX(0); /* Logo entrant à gauche */
+  }
+  100% {
+    transform: translateX(-100%); /* Les logos sortent à gauche */
+  }
+}

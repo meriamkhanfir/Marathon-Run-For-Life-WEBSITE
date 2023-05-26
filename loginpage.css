@@ -1,0 +1,54 @@
+body {
+    background-image: url('iminscri.png');
+    background-size: 125%;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    
+  }
+  .log1{
+    padding-top: 180px;
+    padding-bottom: 300px;
+padding-left: 30%;
+padding-right: 30%;
+  }
+  .containerlog {
+    max-width: 500px;
+    height: 270px;
+   padding-top: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  
+   
+  }
+  
+  .containerlog h2 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+   
+  }
+  
+  .containerlog input[type="text"],
+  .containerlog input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  
+  .containerlog button {
+    margin-top: 70px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+ 
+  }
+  

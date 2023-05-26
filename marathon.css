@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+
+}
+header{
+  height: 100vh;
+  width:10vw;
+
+}
+/* ---------------navbar-----------------*/
+.navbar{
+  position: fixed;
+  padding: 40px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  box-sizing: border-box;
+  background-color: black ;
+  opacity: 0.8;
+  
+  z-index: 999;
+}
+.navbar a{
+  color: white;
+}
+.logo .logo1 {
+  margin-left: 50px;
+  width:150px;
+   height:50px ;
+}
+.navbar .nav-links ul{
+  display: flex;
+  margin:0 150px;
+}
+.navbar .nav-links ul li{
+  margin:0 25px;
+
+
+}
+.navbar ul li a:hover {
+  color: blue;
+}
+/* dropdown-menu home*/
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+.dropdown-menu {
+  display: none;
+  margin: 0 auto;
+}
+.navbar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  
+  top: 60%;
+  background-color: black
+}
+.navbar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+/* dropdown-menu marathon run for life*/
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+/* dropdown menu style */
+.dropdown-menu2 {
+  display: none;
+  margin: 0 auto;
+}
+.navbar ul li:hover .dropdown-menu2 {
+  display: block;
+  position: absolute;
+  top: 60%;
+  background-color: black;
+}
+.navbar ul li:hover .dropdown-menu2 ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover .dropdown-menu2 ul li {
+  width: 150px;
+  padding: 10px;
+}
+/*---------------hamburger----------*/
+.navbar .menu-hamburger{
+  display: none;
+  width:35px;
+  top:35px;
+  right: 0;
+  
+}
+/*---------------condition navbar----------*/
+
+@media screen and (max-width:1100px){
+  .navbar{
+    padding: 50px;
+    padding-right: 0px;
+    color: black;
+  }
+  .navbar .menu-hamburger {
+    display: block;
+    position: absolute;
+    top:25px;
+    left:50px
+
+  }
+  .nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition:all 0.5s ease  ;
+  }
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul  li{
+  margin: 25px 0;
+  font-size: 1.2em;
+  position: relative;;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  width: 100%;
+
+  }
+  img.logo1{
+    display: block;
+    position: absolute;
+    top:25px;
+    right:50px
+   
+  }
+  
+   
+  .navbar a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+  }
+}
+
+/*-----------------solider----------------------*/
+.slider .image{
+  width: 100%;
+  
+}
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position:absolute;
+    font-size: 50px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin-top: 400px;
+}
+#precedent {
+  left: 0;
+}
+
+#suivant {
+  right: 0;
+}
+
+.slider:hover #precedent,
+.slider:hover #suivant {
+  opacity: 1;
+}
+/* parcours et inscription */
+.parcour1-2-3{
+  background-color: #f2f2f2;
+  padding: 20px;
+  overflow: hidden;
+ 
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+
+.rectangle {
+  display: inline-block;
+  height: 200px; /* Réduire légèrement la hauteur à 130px */
+  margin-top: 50px;
+  text-align: center;
+  width: 26%;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s;
+  position: relative; /* Ajouter cette ligne */
+  z-index: -1;
+  margin-top: 50px;
+  margin: 0 50px;
+  z-index: 800;
+
+} 
+
+.parcour1-2-3 h2 {
+  margin-left: 46%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.rectangle:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.parcours {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 800;
+}
+
+.distance {
+  margin-top: 20px;
+  font-size: 35px;
+  z-index: 800;
+}
+
+.inscription {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  margin-top: auto; /* Modifier cette ligne */
+  position: absolute; /* Ajouter cette ligne */
+  bottom: 5px; /* Modifier cette ligne */
+  left: 0; /* Ajouter cette ligne */
+  right: 0; /* Ajouter cette ligne */
+  z-index: 800;
+}
+/*programme*/
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  padding: auto;
+}
+
+.steps {
+  width: 50%;
+}
+
+.step {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.steps h2{
+  margin-bottom: 20px;
+}
+
+.step:hover {
+  background-color: rgb(40, 133, 162);
+  color: greenyellow;
+}
+
+.images {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.images img {
+  width: 550px;
+  height: 70%;
+  transform: translateY(-35px);
+  transition: transform 0.5s ease;
+  transform-origin:  center;
+}
+
+.images img:hover {
+  transform: scale(0.9);
+}
+
+.title:hover {
+  color: rgb(40, 133, 162);
+}
+/* partie historique */
+
+.hist{
+ padding: 50px;
+ background-color: #f2f2f2;
+ padding: 20px;
+ overflow: hidden;
+ margin-bottom: 20px;
+ margin-top: 20px;
+ 
+}
+
+.title {
+  font-size: 24px;
+  margin-top: 20px;
+  transition: color 0.3s ease;
+  padding-left: 50px;
+}
+
+.title:hover {
+  color: #ff595e;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+ 
+}
+
+.text {
+  flex-grow: 1;
+  padding-left: 50px;
+}
+
+.text p {
+  margin: 0;
+}
+
+.imagehist {
+  margin-left: 20px;
+}
+
+.imagehist img {
+margin-right: 100px;
+margin-top: -50px;
+
+  height: 300px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+/*map*/
+.map{
+  background-color: #f2f2f2;
+  padding: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.map h2{
+  margin-bottom: 10px;
+}
+

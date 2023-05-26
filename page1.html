@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marathon</title>
+    <link rel="stylesheet" href="marathon.css">
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="logo1.png" alt="logo" class="logo1"></div>
+        <div class="nav-links">
+          <ul>
+            <li ><a href="marathon.php">Home<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#section-parcours">Parcours</a></li>
+                
+                <li><a href="#section-programme">Programme</a></li>
+                <li><a href="#section-historique">Historique</a></li>
+                <li><a href="#section-Partenaires">Partenaires</a></li>
+                <li><a href="#section-position">position</a></li>
+              </ul>
+            </div>
+            </li>
+            <li ><a href="#">Marathon Run For Life<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu2">
+              <ul>
+                <li><a href="pj1.html">Présentation</a></li>
+                <li><a href="page2.html">Objectifs</a></li>
+                <li><a href="formorganizateur.php">Organisateurs</a></li>
+                <li><a href="formdons.php">Dons</a></li>
+                <li><a href="page3.html">Marathon en TUNISIE</a></li>
+              </ul>
+            </div>
+            </li>
+            </li>
+            <li ><a href="historique.html">Edition</a></li>
+            <li ><a href="#section-contactez-nous">Contactez-Nous</a></li>
+            <li ><a href="loginpage.php">Login</a></li>
+            
+          </ul>
+        </div>
+        <img src="./Hamburger_icon.svg.jpg" alt="menuhamburger" class="menu-hamburger"/>
+        
+      </nav>
+    <section class="about section">
+        <div class="container">
+            <div class="paragraph">
+                <h2 id="target-title1">Présentation du Marathon</h2>
+                <p id="target-paragraph1" class="hidden">Le sport est un formidable créateur de ciment social, de passion et de citoyenneté. Lorsqu'on pratique une activité sportive, le corps sécrète des hormones telles que l'endorphine, la dopamine ou l'adrénaline qui permettent de réduire le stress, améliorer la qualité du sommeil, diminuer les douleurs et agir comme un antidépresseur. C'est donc avant tout une source de plaisir. C'est pour cela que la Jeune Chambre Internationale de Hammam Sousse organise la 3ème édition du marathon "RUN FOR LIFE".</p>
+                <p>La Jeune Chambre Internationale Hammam Sousse organise un Marathon by night sous le nom ‘‘..’’. Elle se déroulera le 22 Septembre 2018.</p>
+                <p>
+                    Trajet : Route touristique (12KM)<br>
+                    Cible public : tous les amoureux du sport<br>
+                    Inscription : 5dt<br>
+                    Nombre de la comité d’organisation: près de 40<br>
+                    Les partenaires :
+                    <ul>
+                        <li>Les sponsors de l’événement</li>
+                        <li>La municipalité de Sousse</li>
+                        <li>La municipalité de Hammam Sousse</li>
+                        <li>Les associations et les clubs sportifs de la région</li>
+                        <li>Les associations des jeunes actifs</li>
+                        <li>Croissant Rouge Hammam Sousse, Amnesty Sousse, Ligue droit de l’homme, Association promotion de santé, association fell de L’environnement, Club animation des quartiers de Sousse, Club athlétisme de Sousse</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="image">
+                <img src="page1.jpg" alt="Image">
+            </div>
+        </div>
+    </section>
+    <script>
+        // Sélectionnez les éléments que vous souhaitez animer
+        const paragraphElement = document.querySelector('.container .paragraph');
+        const titleElement = document.querySelector('.container #target-title1');
+        const imageElement = document.querySelector('.container .image');
+
+        // Ajoutez la classe `.show` à chaque élément pour déclencher les transitions
+        paragraphElement.classList.add('show');
+        titleElement.classList.add('show');
+        imageElement.classList.add('show');
+    </script>
+    <footer>
+        <section id="section-contactez-nous"></section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h2 class="under">About Us</h2>
+                <h3>We are a team of passionate runners who organize the annual Marathon Run for Life event. Our mission is to promote fitness and healthy lifestyle choices while raising funds for charity.</h3>
+              </div>
+              <div class="col-md-4">
+                <h2 class="under">Contact Us</h2>
+                <form>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                  <br>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <br>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <br>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+              <div class="col-md-4">
+                <h2 class="under">Contact Info</h2>
+                <div class="contact-container">
+                  <h3><i class="fas fa-envelope"></i> info@marathonrunforlife.com</h3>
+                  <h3><i class="fas fa-phone"></i> +1 (555) 123-4567</h3>
+                </div>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="footer-text">
+                  <h2>&copy; 2023 Marathon Run for Life. All rights reserved.</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+</body>
+
+</html>

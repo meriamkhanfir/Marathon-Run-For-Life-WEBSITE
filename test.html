@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .rectangle {
+            display: inline-block;
+            width: 200px;
+            height: 130px; /* Réduire légèrement la hauteur à 130px */
+            margin: 10px;
+            text-align: center;
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.5s;
+            position: relative; /* Ajouter cette ligne */
+        }
+        .rectangle:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .parcours {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .distance {
+            margin-top: 20px;
+        }
+
+        .inscription {
+            background-color: #000;
+            color: #fff;
+            padding: 5px;
+            margin-top: auto; /* Modifier cette ligne */
+            position: absolute; /* Ajouter cette ligne */
+            bottom: 5px; /* Modifier cette ligne */
+            left: 0; /* Ajouter cette ligne */
+            right: 0; /* Ajouter cette ligne */
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="parcours">Parcours 1</div>
+        <div class="distance" id="distance1">0 km</div>
+        <div class="inscription"><a href="#">Inscription</a></div>
+    </div>
+    <div class="rectangle">
+        <div class="parcours">Parcours 2</div>
+        <div class="distance" id="distance2">0 km</div>
+        <div class="inscription"><a href="#">Inscription</a></div>
+    </div>
+    <div class="rectangle">
+        <div class="parcours">Parcours 3</div>
+        <div class="distance" id="distance3">0 km</div>
+        <div class="inscription"><a href="#">Inscription</a></div>
+    </div>
+
+    <script>
+        function incrementDistance(elementId, distance) {
+            let element = document.getElementById(elementId);
+            let currentDistance = 0;
+
+            const interval = setInterval(() => {
+                if (currentDistance >= distance) {
+                    clearInterval(interval);
+                } else {
+                    currentDistance++;
+                    element.textContent = currentDistance + " km";
+                }
+            }, 100);
+        }
+
+        incrementDistance("distance1", 5);
+        incrementDistance("distance2", 22);
+        incrementDistance("distance3", 42);
+    </script>
+</body>
+</html>

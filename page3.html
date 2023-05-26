@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marathon</title>
+  <link rel="stylesheet" href="marathon.css">
+  <link rel="stylesheet" href="page3.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="logo1.png" alt="logo" class="logo1"></div>
+    <div class="nav-links">
+      <ul>
+        <li ><a href="marathon.php">Home<i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="pj1.html">Présentation</a></li>
+              <li><a href="page2.html">Objectifs</a></li>
+              <li><a href="formorganizateur.php">Organisateurs</a></li>
+              <li><a href="formdons.php">Dons</a></li>
+              <li><a href="page3.html">Marathon en TUNISIE</a></li>
+          </ul>
+        </div>
+        </li>
+        <li ><a href="#">Marathon Run For Life<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu2">
+          <ul>
+            <li><a href="pj1.html">Présentation</a></li>
+            <li><a href="page2.html">Objectifs</a></li>
+      
+            <li><a href="formorganizateur.html">Organisateurs</a></li>
+            <li><a href="formdons.html">Dons</a></li>
+            <li><a href="page3.html">Marathon en TUNISIE</a></li>
+          </ul>
+        </div>
+        </li>
+        </li>
+        <li ><a href="historique.html">Edition</a></li>
+        <li ><a href="#section-contactez-nous">Contactez-Nous</a></li>
+        <li ><a href="loginpage.php">Login</a></li>
+        
+      </ul>
+    </div>
+    <img src="./Hamburger_icon.svg.jpg" alt="menuhamburger" class="menu-hamburger"/>
+    
+  </nav>
+  <div class="marathon-tun">
+ 
+  <table>
+    <h1>Marathon en Tunisie</h1>
+    <tr>
+      <td>
+        <p>100km del Sahara</p>
+      </td>
+      <td>
+        <p>Douz, Tunisie</p>
+      </td>
+      <td>
+        <p>28 Oct, 2023</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Ultra Mirage El Djerid 50/100km</p>
+      </td>
+      <td>
+        <p>Tozeur, Tunisie</p>
+      </td>
+      <td>
+        <p>30 Sept, 2023</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>The Carthage Race Marathon</p>
+      </td>
+      <td>
+        <p>Carthage, Tunisie</p>
+      </td>
+      <td>
+        <p>25 Févr, 2024</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Défis du Chott</p>
+      </td>
+      <td>
+        <p>Tozeur, Tunisie</p>
+      </td>
+      <td>
+        <p>23 Oct, 2021</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var table = document.querySelector("table");
+      var h1 = document.querySelector("h1");
+
+      setTimeout(function() {
+        table.classList.add("show");
+        h1.classList.add("show");
+      }, 500);
+    });
+  </script>
+  <footer>
+    <section id="section-contactez-nous"></section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="under">About Us</h2>
+            <h3>We are a team of passionate runners who organize the annual Marathon Run for Life event. Our mission is to promote fitness and healthy lifestyle choices while raising funds for charity.</h3>
+          </div>
+          <div class="col-md-4">
+            <h2 class="under">Contact Us</h2>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+              <br>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <br>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <br>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h2 class="under">Contact Info</h2>
+            <div class="contact-container">
+              <h3><i class="fas fa-envelope"></i> info@marathonrunforlife.com</h3>
+              <h3><i class="fas fa-phone"></i> +1 (555) 123-4567</h3>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-text">
+              <h2>&copy; 2023 Marathon Run for Life. All rights reserved.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

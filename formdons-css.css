@@ -1,0 +1,80 @@
+/* CSS Styles for the Donation Form */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+.formdon{
+  padding-top: 120px;
+  margin-bottom: 50px;
+  
+}
+.formdon2{
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.formdon label {
+  display: block;
+  margin-top: 20px;
+  color: #555555;
+  font-weight: bold;
+}
+
+.formdon input[type="text"],
+.formdon select,
+.formdon textarea,
+.formdon input[type="email"],
+.formdon input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+.formdon select {
+  height: 40px;
+}
+
+.formdon textarea {
+  height: 120px;
+}
+
+.formdon input[type="submit"] {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formdon input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: #00aa00;
+  font-size: 14px;
+  margin-top: 5px;
+}
