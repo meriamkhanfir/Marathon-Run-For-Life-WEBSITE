@@ -317,26 +317,28 @@
   </body>
 </html>
 <?php
-/*echo "hello world";
-echo "<a href='WebProject.html'>back</a>";*/
-$conn = mysqli_connect('localhost', 'marathon', 'marathon2023', 'marathon');
-if (!$conn) {
-    echo 'connection error' . mysqli_connect_error();
-}
+$servername = "localhost";
+$username = "marathon";
+$password = "marathon2023";
+$dbname = "marathon";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nom = $_POST['nom'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    
-    $sql = "INSERT INTO contactez_nous (Username, Email, Message) VALUES ('$nom', '$email',  '$message')";
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    if (mysqli_query($conn, $sql)) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $nom = $_POST['nom'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+        $stmt = $conn->prepare("INSERT INTO contactez_nous (Username, Email, Message) VALUES (?, ?, ?)");
+        $stmt->execute([$nom, $email, $message]);
+
         echo "New record inserted successfully";
-    } else {
-        echo "Insertion error: " . mysqli_error($conn);
     }
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
 }
 
-mysqli_close($conn);
+$conn = null;
 ?>
